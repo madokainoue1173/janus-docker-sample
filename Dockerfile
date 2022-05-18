@@ -103,7 +103,7 @@ WORKDIR /home
 RUN git clone https://github.com/madokainoue1173/janus-docker-sample.git
 WORKDIR /home/janus-docker-sample/share
 RUN cp default /etc/nginx/sites-available/default
-RUN systemctl restart nginx.service
+# RUN systemctl restart nginx.service
 RUN cp janus.transport.http.jcfg /opt/janus/etc/janus/janus.transport.http.jcfg
 
 
